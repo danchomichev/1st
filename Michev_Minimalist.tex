@@ -1,0 +1,47 @@
+\documentclass{amsbook}
+\usepackage{amsmath, amsthm,  polynom, systeme}
+\DeclareMathOperator\arctanh{arctanh}
+
+\includeonly{preface,  chapter_1,  chapter_2,  chapter_3,  chapter_4,  biblio,  index}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{section}{chapter}
+\numberwithin{equation}{chapter}
+
+\newcommand{\abs}[1]{\lvert#1\rvert}
+
+\begin{document}
+
+\title{Differential Equations Problem-Book for two-year College Students}
+\author{Iordan P Michev}
+\address{Mathematics Department, SUNY SCCC, Selden, NY 11784}
+\email{michevi@sunysuffolk.edu}
+\address{AMS Department, Stony Brook University, Stony Brook, NY 11794}
+\email{iordan.michev@stonybrook.edu}
+\maketitle
+
+\frontmatter 
+\tableofcontents
+\include{preface}
+
+\mainmatter
+\include{chapter_1}
+\include{chapter_2}
+\include{chapter_3}
+\include{chapter_4}
+
+\backmatter
+\include{biblio}
+\include{index}
+
+\end{document}
